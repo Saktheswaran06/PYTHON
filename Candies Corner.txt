@@ -1,0 +1,27 @@
+print("********************************************************************************************")
+print("**************************WELCOME TO CANDIES CORNER SHOP*************************************")
+CANDY=1000
+COST=5
+print("Do you want to buy some candies ?")
+print("PRESS Y TO SAY YES AND N TO SAY NO")
+ch=input(" ENTER YES OR NO")
+while ch=='Y' or ch=='y':
+    print("How many Candies would you like?")
+    candies=int(input("ENTER THE NO OF CANDIES YOU WANT"))
+    if candies<=CANDY:
+        Amount=candies*COST
+        print("HERE ARE YOUR CANDIES, YOUR TOTAL WOULD BE RS",Amount)
+        if CANDY-candies>0:
+            print("WE HAVE",CANDY-candies, "left in the shop, Do you need more?")
+            ch=input("ENTER YES OR NO")
+            CANDY=CANDY-candies
+    else:
+        print("SORRY WE DON'T HAVE ENOUGH CANDIES PLEASE COME TOMORROW")
+        print("SORRY for the inconvienience Please come again")
+        break
+if ch=="N" or ch=="n":
+    print("Thank You,Please Do Visit Again!")
+ 
+    
+
+    
