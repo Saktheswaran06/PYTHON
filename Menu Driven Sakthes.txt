@@ -1,0 +1,188 @@
+print("*****MENU*****")
+print("1.List\n2.Tuple\n3.Set\n4.String\n5.Dictionary")
+ch=int(input("ENTER YOUR CHOICE"))
+if ch==1:
+        while True:
+            print("1.Defination of List\n2.To add elements on list\n3.To delete elements on list\n4.EXIT")
+            ch1=int(input("Enter a number"))
+            if ch1==1:
+                print("Defination of List:-A list in Python is used to store the sequence of various types of data. A list can be defined as a collection of values or items of different types. Python lists are mutable type which implies that we may modify its element after it has been formed. The items in the list are separated with the comma (,) and enclosed with the square brackets [].")
+            elif ch1==2:
+                while True:
+                    print("1.ADD SINGLE ELEMENTS\n2.ADD MULTIPLE ELEMENTS\n3.ADD IN A GIVEN POSITION\n4.EXIT")
+                    ch11=int(input("Enter your Choice"))
+                    if ch11==1:
+                        l=["Potato",67,"Sakthes",66,"FATHER"]
+                        print(l)
+                        i=input("enter your choice")
+                        l.append(i)
+                        print(l)
+                    elif ch11==2:
+                        l=["Potato",67,"Sakthes",66,"FATHER"]
+                        print(l)
+                        l1=["BOLLYWOOD",55]
+                        print(l1)
+                        l.extend(l1)
+                        print(l)
+                    elif ch11==3:
+                        l=["Potato",67,"Sakthes",66,"FATHER"]
+                        print(l)
+                        i=input("ENTER YOUR CHOICE")
+                        p=int(input("Enter your position"))
+                        l.insert(p,i)
+                        print(l)
+                    else:
+                        break
+            elif ch1==3:
+                while True:
+                    print("1.DELETE LAST ELEMENT\n2.DELETE USING INDEXING\n3.DELETE USING VALUES\n4.CLEAR ALL RECORDS FROM THE LIST\n5.DELETE THE LIST\n6.EXIT")
+                    ch12=int(input("Enter your choice"))
+                    if ch12==1:
+                        l=["Potato",67,"Sakthes",66,"FATHER"]
+                        print(l)
+                        l.pop()
+                        print(l)
+                    elif ch12==2:
+                        l=["Potato",67,"Sakthes",66,"FATHER"]
+                        print(l)
+                        l=["Potato",67,"Sakthes",66,"FATHER"]
+                        print(l)
+                        l.pop(i)
+                        print(l)
+                    elif ch12==3:
+                        l=["Potato",67,"Sakthes",66,"FATHER"]
+                        print(l)
+                        i=input("Enter the value")
+                        l.remove(i)
+                        print(l)
+                    elif ch12==4:
+                        l=["Potato",67,"Sakthes",66,"FATHER"]
+                        print(l)
+                        l.clear()
+                        print(l)
+                    elif ch12==5:
+                        l=["Potato",67,"Sakthes",66,"FATHER"]
+                        print(l)
+                        del l
+                        print(l)
+                    else:
+                        break
+            else:
+                break
+elif ch==2:
+    print("Defination of Tuple:-Python Tuple is a collection of objects separated by commas. In some ways, a tuple is similar to a list in terms of indexing, nested objects, and repetition but a tuple is immutable, unlike lists which are mutable.")
+elif ch==3:
+    while True:
+        print("1.Defination of Set\n2.Add elements in Set\n3.Delete Elements in Set\n4.EXIT")
+        ch3=int(input("ENTER YOUR CHOICE"))
+        if ch3==1:
+            print("Defination of Set:-A Set is an unordered collection data type that is iterable, mutable, and has no duplicate elements.")
+        elif ch3==2:
+            while True:
+                print("1.ADD SINGLE ELEMENTS\n2.Add Multiple Elements\n3.Exit")
+                ch31=int(input("ENTER YOUR CHOICE"))
+                if ch31==1:
+                    s={100,200,300,400,500}
+                    i=int(input("ENTER YOUR CHOICE"))
+                    s.add(i)
+                    print(s)
+                if ch31==2:
+                    s={100,200,300,400,500}
+                    a=int(input("ENTER YOUR CHOICE"))
+                    b=int(input("ENTER YOUR CHOICE"))
+                    i=set([a,b])
+                    s.update(i)
+                    print(s)
+                else:
+                    break
+        elif ch3==3:
+            while True:
+                print("1.Delete A Random elements\n2.Delete Elements by values\n3.Delete using discard\n4.clear all values\n5.Delete Entire Set\n6.EXIT")
+                ch32=int(input("ENTER YOUR CHOICE"))
+                if ch32==1:
+                    a=int(input("ENTER YOUR CHOICE"))
+                    b=int(input("ENTER YOUR CHOICE"))
+                    c=int(input("ENTER YOUR CHOICE"))
+                    d=int(input("ENTER YOUR CHOICE"))
+                    s={a,b,c,d}
+                    print(s)
+                    s.pop()
+                    print(s)
+                elif ch32==2:
+                    s={100,200,300,400,500}
+                    print(s)
+                    i=int(input("ENTER VALUE TO REMOVE"))
+                    s.remove(i)
+                    print(s)
+                elif ch32==3:
+                    s={100,200,300,400,500}
+                    print(s)
+                    i=int(input("ENTER VALUE TO discard"))
+                    s.discard(i)
+                    print(s)
+                elif ch32==4:
+                    s={100,200,300,400,500}
+                    print(s)
+                    s.clear()
+                    print(s)
+                elif ch32==5:
+                    s={100,200,300,400,500}
+                    print(s)
+                    del s
+                    print(s)
+                else:
+                    break
+        else:
+            break
+elif ch==4:
+        print("Defination of String:-String is a collection of alphabets, words or other characters. It is one of the primitive data structures and are the building blocks for data manipulation. ")
+elif ch==5:
+    while True:
+        print("1.Defination of dictionary\n2.Add Element in dictionary\n3.Delete in dictionary\n4.Exit")
+        ch5=int(input("ENTER YOUR CHOICE"))
+        if ch5==1:
+            print("Defination of Dictionary:-String is a collection of alphabets, words or other characters. It is one of the primitive data structures and are the building blocks for data manipulation. ")
+        elif ch5==2:
+            while True:
+                print("1.add single elements\n2.Add Multiple Elements\n3.EXIT")
+                ch52=int(input("Enter your choice"))
+                if ch52==1:
+                    d={"Name":"SAKTHESN","Age":21}
+                    print(d)
+                    i=input("ENTER YOUR CHOICE")
+                    d["user"]=i
+                    print(d)
+                elif ch52==2:
+                    d={"Name":"SAKTHESN","Age":21}
+                    print(d)
+                    i=input("ENTER YOUR CHOICE")
+                    x=input("ENTER YOUR CHOICE")
+                    d.update({"user1":i,"user2":x})
+                    print(d)
+                else:
+                    break
+        elif ch5==3:
+            while True:
+                print("1.Delete by particular Value\n2.Clear the dictionary\n3.DELETE entire dictionary\n4.EXIT")
+                ch53=int(input("Enter your choice"))
+                if ch53==1:
+                    d={"Name":"SAKTHESN","Age":21}
+                    print(d)
+                    del d["Name"]
+                    print("DELETE SAKTHESN FROM DICTIONARY")
+                    print(d)
+                elif ch53==2:
+                    d={"Name":"SAKTHESN","Age":21}
+                    print(d)
+                    d.clear()
+                    print(d)
+                elif ch53==3:
+                    d={"Name":"SAKTHESN","Age":21}
+                    print(d)
+                    del d
+                    print(d)
+                else:
+                    break
+        else:
+            break
+print("GOODBYE") 
